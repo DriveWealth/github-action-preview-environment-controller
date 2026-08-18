@@ -56,10 +56,10 @@ runs:
           echo "destroy=with_entries(select(.value | IN({0}[]))) | keys" >> $GITHUB_OUTPUT
         fi
 
-    - name: 'Install jq 1.6'
-      uses: dcarbone/install-jq-action@v2.1.0
+    - name: 'Install jq'
+      uses: dcarbone/install-jq-action@v3.2.0
       with:
-        version: 1.6
+        version: 1.7.1
         force: 'true'
 
     - uses: cloudposse/github-action-jq@0.4.0
