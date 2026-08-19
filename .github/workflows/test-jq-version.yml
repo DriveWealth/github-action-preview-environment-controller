@@ -64,7 +64,7 @@ jobs:
 
       - uses: nick-fields/assert-action@v2
         with:
-          expected: 'jq-1.6'
+          expected: 'jq-1.7.1'
           actual: ${{ steps.new.outputs.version }}
 
 
